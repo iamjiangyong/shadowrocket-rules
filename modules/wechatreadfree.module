@@ -1,0 +1,9 @@
+
+#!name=微信读书
+#!desc=微信读书
+
+
+[Script]
+1blocker= type=http-response,pattern=^https?:\/\/i\.weread\.qq\.com\/pay\/memberCardSummary url script-response-body https://raw.githubusercontent.com/I-am-R-E/QuantumultX/main/JavaScript/WeRead.js
+[MITM]
+hostname= %APPEND% i.weread.qq.com,101*.*.*,116.*.*.*,117.*.*.*,120.*.*.*,121.*.*.*,140.*.*.*,183.*.*.*,203*.*.*
